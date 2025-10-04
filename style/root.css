@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('./header.css');
+@import url('./footer.css');
+/* ROOT E BODY*/
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +11,12 @@
 :root {
     --bg_page: #3D0909;
     --bg_highlight: white;
+    --bg_footer: black;
 
     --text_Onlight_color: black;
     --text_OnDark_color: white;
     --text_highlight: #C2302B;
+    --text_footer: #999999;
     --text_font: "Poppins", sans-serif;
 
     --border: #C2302B;
@@ -23,74 +27,10 @@
 .hidden {
     display: none !important;
 }
-
+.logo {
+    width: 200px;
+}
 
 body {
     font-family: var(--text_font);
-}
-header {
-    background-color: var(--bg_page);
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: var(--border) solid 8px;
-}
-#header_logo {
-    width: 200px;
-}
-#header__hamburger {
-    background-color: var(--bg_page);
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-}
-#header__navBar {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--bg_page);
-    position: absolute;
-    top: 104px;
-    width: 100%;
-    left: 0;
-    border-bottom: var(--border) solid 8px;
-}
-.navBar__items {
-    display: flex;
-    align-items: center;
-    padding: 4px 8px;
-}
-.navItem_selected {
-    background-color: var(--bg_highlight);
-    color: var(--text_Onlight_color);
-}
-#services_label::after {
-    content: "";
-    display: flex;
-    width: 16px;
-    height: 16px;
-    background: url("../img/icons/arrow_right_selected.svg") no-repeat center;
-    background-size: contain;
-    margin-left: auto;
-}
-#services_label.down::after {
-    background: url("../img/icons/arrow_down.svg") no-repeat center;
-    background-size: contain;
-}
-#services {
-    display: block;
-    border-top: var(--border) solid 8px;
-    border-bottom: var(--border) solid 8px;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    top: 104px;
-}
-#services li {
-    list-style-type: none;
-    padding: 4px 8px;
-}
-header, header a {
-    color: var(--text_OnDark_color);
-    text-decoration: none;
 }
