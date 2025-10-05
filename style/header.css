@@ -35,7 +35,7 @@ header {
 }
 .navItem_selected {
     background-color: var(--bg_highlight);
-    color: var(--text_Onlight_color);
+    color: var(--text_Onlight_color) !important;
 }
 #services_label::after {
     content: "";
@@ -72,4 +72,51 @@ header h1 {
     grid-area: title;
     margin: auto;
     padding: 16px;
+}
+
+@media screen and (min-width: 740px) {
+    #header__hamburger {
+        display: none;
+    }
+    #header__navBar {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #services{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--bg_page);
+        width: auto;
+        border: none;
+        border-right: var(--border) solid 8px;
+        border-left: var(--border) solid 8px;
+        border-bottom: var(--border) solid 8px;
+        /* border-top: blue solid 1px; */
+        top: 60px;
+        right: 22svw;
+        gap: 6px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #services li:hover, #services_label:hover, .navBar__items:hover {
+        background-color: var(--bg_highlight);
+        color: var(--text_Onlight_color);
+        cursor: pointer;
+    }
+    #services li a {
+        display: block;
+        width: 100%;
+    }
+    #services li a:hover {
+        color: var(--text_Onlight_color);
+    }
+    #services_label:hover + #services,
+    #services:hover,
+    #services:focus-within,
+    #services_label:focus + #services {
+        display: flex !important;
+    }
 }

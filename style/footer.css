@@ -36,3 +36,14 @@ footer section p {
     display: flex;
     padding: 8px;
 }
+
+@media screen and (min-width: 740px) {
+    #info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #info section {
+        width: 300px;
+    }
+}
