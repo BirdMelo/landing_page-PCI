@@ -1,0 +1,120 @@
+main {
+    font-family: var(--text_font_main);
+    color: var(--text_OnLight_color);
+}
+#main__img_container {
+    background: linear-gradient(black, var(--bg_page));
+}
+#img_maketing {
+    display: block;
+    width: 100svw;
+    max-width: 740px;
+    margin: auto;
+}
+main h2 {
+    background-color: var(--bg_page);
+    color: var(--text_OnDark_color);
+    text-align: center;
+    padding: 6px;
+    border-bottom: var(--border) solid 8px;
+}
+#marketing__services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px 8px;
+}
+#marketing__services div {
+    display: grid;
+    gap: 16px;
+    background-color: var(--bg_container);
+    padding: 8px;
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    color: var(--text_OnDark_color);
+}
+.service {
+    max-width: 600px;
+}
+#marketing__services div h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#marketing__services div img {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 100%;
+}
+#textMaketingServices {
+    text-align: justify;
+}
+#marketing__services div span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.advantages {
+    width: auto;
+}
+.advantages ul{
+    display: grid;
+    gap: 8px;
+    margin-left: 25px;
+    list-style-type: circle;
+}
+.advantages ul li::marker {
+    color: var(--border);
+}
+#contato {
+    margin: 8px;
+    background-color: var(--bg_page);
+    border: solid 2px var(--border);
+    border-radius: 16px;
+    padding: 8px;
+    color: var(--text_OnDark_color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+#contato p {
+    text-align: center;
+}
+#sucesso {
+    font-size: 2rem;
+    font-family: var(--text_font);
+    font-weight: bolder;
+    text-shadow:
+    0 0 5px var(--border),
+    0 0 10px var(--border),
+    0 0 20px var(--border),
+    0 0 40px var(--border);
+}
+#contato_link {
+    color: var(--text_OnDark_color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: solid 2px var(--border);
+    padding: 8px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+#contato_link:hover {
+    background-color: var(--bg_highlight);
+    color: var(--text_Onlight_color);
+}
+@media screen and (min-width: 740px) {
+    #main__img_container {
+        padding: 24px 0;
+    }
+    #img_maketing {
+        border: solid 2px var(--border);
+        border-radius: 16px;
+    }
+
+}

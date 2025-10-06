@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('./header.css');
+@import url('./main.css');
 @import url('./footer.css');
 /* ROOT E BODY*/
 * {
@@ -9,15 +11,17 @@
 }
 
 :root {
-    --bg_page: #3D0909;
+    --bg_page: #410101;
     --bg_highlight: white;
     --bg_footer: black;
+    --bg_container: #410101;
 
     --text_Onlight_color: black;
     --text_OnDark_color: white;
     --text_highlight: #C2302B;
     --text_footer: #999999;
     --text_font: "Poppins", sans-serif;
+    --text_font_main: "Montserrat", sans-serif;
 
     --border: #C2302B;
 }

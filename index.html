@@ -20,21 +20,102 @@
         <nav id="header__navBar" class="hidden">
             <a class="navBar__items" href="#">Início</a>
             <a class="navBar__items" href="#">Sobre</a>
-            <label class="navBar__items onPage" id="services_label" for="services">Serviços</label>
-            <ul id="services" class="hidden">
-                <li><a href="#">Consultoria Empresarial</a></li>
-                <li><a href="#">Consultoria Jurídica</a></li>
-                <li><a href="#" class="onPage">Marketing</a></li>
-                <li><a href="#">Projetos de Engenharia</a></li>
-                <li><a href="#">Projetos de Arquitetura</a></li>
-            </ul>
+            <div id="navBarItem__service">
+                <label class="navBar__items onPage" id="services_label" for="services">Serviços</label>
+                <ul id="services" class="hidden">
+                    <li><a href="#">Consultoria Empresarial</a></li>
+                    <li><a href="#">Consultoria Jurídica</a></li>
+                    <li><a href="#" class="onPage">Marketing</a></li>
+                    <li><a href="#">Projetos de Engenharia</a></li>
+                    <li><a href="#">Projetos de Arquitetura</a></li>
+                </ul>
+            </div>
             <a class="navBar__items" href="#">Portfólio</a>
             <a class="navBar__items" href="#">Contato</a>
             
         </nav>
         <h1>Marketing</h1>
     </header>
-    <main></main>
+
+    <main>
+        <div id="main__img_container">
+            <img 
+                id="img_maketing" 
+                src="./img/estrategia-marketing-taticas.png" 
+                alt="marketing imagem"
+            >
+        </div>
+        
+        <h2>Serviços</h2>
+        <section id="marketing__services">
+            <div class="service">
+                <h3>Gerenciamento de Mídia</h3>
+                <img src="./img/icons/mídia maketing.png" alt="mídia imagem">
+                <p class="textMaketingServices">
+                    É uma ferramenta de gestão de marketing que visa a definição e
+                    implementação de uma estratégia para aumentar a visibilidade do negócio no
+                    meio digital. Melhora o relacionamento com o consumidor e a captação de leads,
+                    através da interação constante com o público e a produção de conteúdos
+                    atraentes e de qualidade nas redes sociais.
+                </p>
+                <span>“Essa ideia é viável e lucrativa ao meu negócio ou não?”</span>
+                <div class="advantages">
+                    <p>Conheça as vantagens:</p>
+                    <ul>
+                        <li>
+                            <p>Estruturação do negócio</p>
+                        </li>
+                        <li>
+                            <p>Estudo mercadológico aprofundado</p>
+                        </li>
+                        <li>
+                            <p>Projeções futuras</p>
+                        </li>
+                        <li>
+                            <p>Diminuição de riscos</p>
+                        </li>
+                        <li>
+                            <p>Visão do real ambiente do negócio</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service">
+                <h3>Design de Marca</h3>
+                <img src="./img/icons/design marketing.png" alt="Design imagem">
+                <p class="textMaketingServices">
+                    Ter uma identidade visual personalizada é muito mais que uma simples logo,
+                    é a tradução da missão e sonhos com elementos visuais.
+                    E a Projetos está pronta para criar uma marca que transpareça tudo
+                    que você acredita.
+                </p>
+                <span>“Meu negócio possui uma identidade própria?”</span>
+                <div class="advantages">
+                    <p>Conheça as vantagens:</p>
+                    <ul>
+                        <li>
+                            <p>Estratégia de diferenciação</p>
+                        </li>
+                        <li>
+                            <p>Logos personalizadas</p>
+                        </li>
+                        <li>
+                            <p>Clientes engajados e fidelizados</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <p>
+                A Projetos Consultoria Integrada se preocupa com sua necessidade e foca no seu...
+            </p>
+            <span id="sucesso">Sucesso</span>
+            <p>Marque já um diagnóstico com nossa equipe!</p>
+            <a id="contato_link" href="https://projetosintegrada.com.br/contato/">Clique aqui</a>
+        </section>
+    </main>
+
     <footer>
         <img id="footer_logo" class="logo" 
             src="./img/logo/PCI - Logo Escrita Branca.png" 
@@ -43,8 +124,8 @@
         <div id="info">
             <section id="phone_section">
                 <img src="./img/icons/footer_phone.svg" alt="icone de telefone">
-                <span>(61) 99853-8516</span>
-                <p>Entre em contato</p>
+                <span>Entre em contato</span>
+                <p>(61) 99853-8516</p>
             </section>
             <section id="email_section">
                 <img src="./img/icons/footer_email.svg" alt="icone de email">
@@ -61,7 +142,6 @@
                 <span>Localização</span>
                 <p>SEPN 707/907, Ceub - Asa Norte, Bloco 2, Sala 2311 CEP: 70790-075</p>
             </section>
-            
         </div>
         <section id="socialMedia">
             <span>Redes Sociais</span>

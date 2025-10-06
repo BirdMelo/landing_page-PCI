@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    //Variaveis
     const header = document.querySelector("header");
     const header__hamburger = document.getElementById("header__hamburger");
     const header__hamburger__img = header__hamburger?.querySelector('img');
@@ -51,10 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
         header__navBar.classList.remove('hidden')
         header.style.rowGap = '0px';
     }
+    //Ouvinte para a mudança de tamanho da janela.
     window.addEventListener('resize', () => {
         if (window.innerWidth >= 740) { // telas maiores
             header__navBar.classList.remove('hidden');
-            // services.classList.remove('hidden');
             if(header__hamburger__img) header__hamburger__img.src = './img/icons/hamburger.svg';
             header.style.rowGap = '0px';
             services_label.classList.remove('navItem_selected', 'down');

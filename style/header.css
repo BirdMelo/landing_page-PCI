@@ -3,6 +3,7 @@ header {
     background-color: var(--bg_page);
     padding: 16px;
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas: 
     "logo hamburger"
     "title title"
@@ -33,6 +34,9 @@ header {
     align-items: center;
     padding: 4px 8px;
 }
+#navBarItem__service {
+    position: relative;
+}
 .navItem_selected {
     background-color: var(--bg_highlight);
     color: var(--text_Onlight_color) !important;
@@ -56,8 +60,7 @@ header {
     border-bottom: var(--border) solid 8px;
     width: 100%;
     position: absolute;
-    right: 0;
-    top: 104px;
+    top: 33px;
 }
 #services li {
     list-style-type: none;
@@ -83,6 +86,11 @@ header h1 {
         position: static;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 2px;
+    }
+    #services_label {
+        margin-bottom: 0;
+        padding-bottom: 2px;
     }
     #services{
         display: flex;
@@ -95,8 +103,8 @@ header h1 {
         border-left: var(--border) solid 8px;
         border-bottom: var(--border) solid 8px;
         /* border-top: blue solid 1px; */
-        top: 60px;
-        right: 22svw;
+        top: 33px;
+        right: -15px;
         gap: 6px;
     }
 }
