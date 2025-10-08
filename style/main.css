@@ -1,9 +1,11 @@
 main {
     font-family: var(--text_font_main);
     color: var(--text_OnLight_color);
+    background: linear-gradient(black, var(--bg_page));
+    padding-bottom: 16px;
 }
 #main__img_container {
-    background: linear-gradient(black, var(--bg_page));
+    /* background: linear-gradient(black, var(--bg_page)); */
 }
 #img_maketing {
     display: block;
@@ -12,11 +14,11 @@ main {
     margin: auto;
 }
 main h2 {
-    background-color: var(--bg_page);
+    /* background-color: var(--bg_page); */
     color: var(--text_OnDark_color);
     text-align: center;
     padding: 6px;
-    border-bottom: var(--border) solid 8px;
+    /* border-bottom: var(--border) solid 8px; */
 }
 #marketing__services {
     display: flex;
@@ -70,7 +72,6 @@ main h2 {
     color: var(--border);
 }
 #contato {
-    margin: 8px;
     background-color: var(--bg_page);
     border: solid 2px var(--border);
     border-radius: 16px;
