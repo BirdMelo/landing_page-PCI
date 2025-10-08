@@ -11,19 +11,19 @@
 }
 
 :root {
-    --bg_page: #410101;
+    --bg_page: #770F0F;
     --bg_highlight: white;
     --bg_footer: black;
-    --bg_container: #410101;
+    --bg_container: #770F0F;
 
     --text_Onlight_color: black;
     --text_OnDark_color: white;
-    --text_highlight: #C2302B;
-    --text_footer: #999999;
+    --text_highlight: #C40001;
+    --text_footer: #737373;
     --text_font: "Poppins", sans-serif;
     --text_font_main: "Montserrat", sans-serif;
 
-    --border: #C2302B;
+    --border: #C40001;
 }
 .onPage {
     color: var(--text_highlight);
