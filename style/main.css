@@ -4,9 +4,9 @@ main {
     background: linear-gradient(black, var(--bg_page));
     padding-bottom: 16px;
 }
-#main__img_container {
-    /* background: linear-gradient(black, var(--bg_page)); */
-}
+/* #main__img_container {
+    background: linear-gradient(black, var(--bg_page));
+} */
 #img_maketing {
     display: block;
     width: 100svw;
